@@ -1,4 +1,5 @@
 require_relative 'middlewares/exception_handling'
+require_relative 'middlewares/track_request'
 
 module AppInsights
   class Middlewares
