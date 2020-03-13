@@ -10,7 +10,7 @@ module AppInsights
 
     def call(env)
       path_info = env['PATH_INFO']
-      if @ignore_prefixes.any? { |prefix| path_info.starts_with?(prefix) }
+      if @ignore_prefixes.any? { |prefix| path_info.start_with?(prefix) }
         @app.call env
       else
         @track_request.call env
