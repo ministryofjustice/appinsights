@@ -224,3 +224,13 @@ At Theorem we believe in and support open-source software.
 - [Want to join the team?](https://theorem.co/careers)
 
 _Theorem and the Theorem logo are trademarks or registered trademarks of Theorem, LLC._
+
+## Disabling logging
+
+If you want to disable the AppInsights logging, set the env var called `APPINSIGHTS_LOGGING_ENABLED` to false
+
+```
+APPINSIGHTS_LOGGING_ENABLED=false
+```
+
+The logging is enabled (true) as default.
