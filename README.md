@@ -229,7 +229,7 @@ _Theorem and the Theorem logo are trademarks or registered trademarks of Theorem
 
 If you want to disable the AppInsights logging, set the env var called `APPINSIGHTS_LOGGING_ENABLED` to false
 
-```
+```shell
 APPINSIGHTS_LOGGING_ENABLED=false
 ```
 
