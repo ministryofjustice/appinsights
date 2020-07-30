@@ -14,7 +14,7 @@ module AppInsights
 
       installer.install
 
-      if ENV.fetch('APPINSIGHTS_LOGGING_ENABLED', 'false') == 'true'
+      if ENV.fetch('APPINSIGHTS_LOGGING_ENABLED', 'true') == 'false'
         Rails.logger = AppInsights::LoggerProxy.new Rails.logger
       end
     end
