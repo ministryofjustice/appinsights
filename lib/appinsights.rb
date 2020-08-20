@@ -1,3 +1,5 @@
+return if ENV.fetch('APPINSIGHTS_ENABLED', 'true') == 'false'
+
 require 'logger'
 require_relative 'appinsights/errors'
 require_relative 'appinsights/context'
